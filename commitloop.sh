@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-COUNT="${1:-100}"
+COUNT="${1:-10}"
 
 for i in $(seq 1 "$COUNT"); do
   echo "$(date -u +%FT%TZ) $i" >> commits.log
